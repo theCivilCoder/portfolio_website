@@ -1,0 +1,61 @@
+/* Header section */
+.header{
+    width:100;
+    background-color: #475D70 !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color:white !important;  
+}
+
+.logo{
+    padding-left: 15px;
+}
+
+.section-link{
+    border-left: 2px;
+    font-weight:100 !important;
+}
+
+a{
+    color:inherit;
+    text-decoration: none;
+}
+
+
+/* General styling within the body */
+body{
+    padding-top:50px;
+}
+
+
+.container{
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-right:0;
+    margin-left:0;
+    padding-left:0;
+}
+
+
+/* Banner Section */
+#banner {
+display:flex;
+justify-content:center;
+align-items:center;
+color: #ffffff;
+padding-top: 25%;
+padding-bottom: 25%;
+background-image: url(./images/architecture2.jpg);
+background-size: cover;
+background-position: center;
+}
+
+#banner h1 {
+font-size: 55px;
+margin-bottom:45px;
+}
+
+#banner p {
+font-size: 20px;
+}
