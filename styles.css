@@ -122,6 +122,11 @@ font-size: 20px;
 
 }
 
+#work .card {
+  color:black;
+}
+
+
 /* Contact Section */
 #contact {
   background-color: grey;
