@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <script src="https://kit.fontawesome.com/43adc19e09.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
@@ -17,8 +18,8 @@
                 <div class="d-flex flex-row justify-content-end px-5">
                     <h4 class="px-3 section-link"><a href="#about">ABOUT</a></h4>
                     <h4 class="px-3 section-link"><a href="#projects">PROJECTS</a></h4>
-                    <h4 class="px-3 section-link">WORK EXPERIENCE</h4>
-                    <h4 class="px-3 section-link">CONTACT</h4>
+                    <h4 class="px-3 section-link"><a href="#work">WORK EXPERIENCE</a></h4>
+                    <h4 class="px-3 section-link"><a href="#contact">CONTACT</a></h4>
                 </div>
             </div>
         </div>
@@ -58,8 +59,11 @@
                         <br>University of Calgary (Sept 2013 - Apr 2018)
                     </p>
                 </div>
-                <a href="https://www.linkedin.com/in/karlenchow/" class="fab fa-linkedin"></a>
-                <a href="https://github.com/KChow095" class="fab fa-github-square"></a>
+                <div class="d-flex">
+                    <a href="https://www.linkedin.com/in/yong-jun-jimmy-zhu-b88309b4/" class="fab fa-linkedin" target="_blank"></a>
+                    <a href="https://github.com/theCivilCoder" class="fab fa-github-square" target="_blank"></a>
+                </div>
+                
             </div>
         </div>
 
@@ -96,7 +100,7 @@
                     </div>
                     <p style="padding-left:15px;">
                         <strong>Technology Used:</strong>
-                        Angular 12, Reactive Forms, HTML5, CSS3, Bootstrap 5, Kotlin, PostgreSQL, Docker, JPA Spring Boot
+                        Angular 12, Reactive Forms, HTML5, CSS3, Bootstrap 5, Kotlin, PostgreSQL, Docker, JPA Spring Boot, Gitlab CI/CD Pipeline, LESS
                     </p>
                 </div>
                 <div class="card border-dark my-4 w-100">
@@ -156,36 +160,63 @@
                 </div>
                 <div class="card border-dark my-4 w-100">
                     <div class="card-header text-dark d-flex justify-content-between">
-                        <h5 class="card-title">Dark card title -- Header</h5>
+                        <h5 class="card-title">Energy News Webscraper</h5>
                         <a href="#">Go to Github Repo</a>
                     </div>
                     <div class="card-body text-dark">
-                        <!-- <p class="card-text"><strong>Description:</strong></p> -->
                         <ul>
                             <li>
-                                point 1
+                                Goes through the first five pages of oilprice.com and boereport.com and collects the links to each news article.
                             </li>
                             <li>
-                                point 1
+                                Drops all the links which were already webscraped as recorded on a spreadsheet.
                             </li>
                             <li>
-                                point 1
+                                Webscrape all news articles for title, date, author names, summaries, and descriptions to a word document. 
+                            </li>
+                            <li>
+                                Move all word documents created to a new directory and update the spreadsheet to track which links were webscraped.
                             </li>
                         </ul>
                     </div>
                     <p style="padding-left:15px;">
                         <strong>Technology Used:</strong>
-                        Python, scikit-learn,
-                        pandas, 
+                        Python, Selenium, Pandas, docx, os, openpyxl 
                     </p>
                 </div>
                 <div class="card border-dark my-4 w-100">
+                    <div class="card-header text-dark d-flex justify-content-between">
+                        <h5 class="card-title">Automated Resolution of Structural Dynamics Problems</h5>
+                        <a href="#">Go to Github Repo</a>
+                    </div>
+                    <div class="card-body text-dark">
+                        <ul>
+                            <li>
+                                Recursively derive the values of all closed form structural dynamics problems.
+                            </li>
+                            <li>
+                                Can resolve displacements, natural frequencies, and the reduced stiffness matrix for damped free vibration and arbitrary loading problems.
+                            </li>
+                            <li>
+                                Equations included in this version apply to Single Degree of Freedom and Multi-Degrees of Freedom models.
+                            </li>
+                            <li>
+                                Includes a math module which can convert a typed out equation into executable code for resolving equations.
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <p style="padding-left:15px;">
+                        <strong>Technology Used:</strong>
+                        Python, pandas, openpyxl, re (regular expressions) 
+                    </p>
+                </div>
+                <!-- <div class="card border-dark my-4 w-100">
                     <div class="card-header text-dark d-flex justify-content-between">
                         <h5 class="card-title">Dark card title -- Header</h5>
                         <a href="#">Go to Github Repo</a>
                     </div>
                     <div class="card-body text-dark">
-                        <!-- <p class="card-text"><strong>Description:</strong></p> -->
                         <ul>
                             <li>
                                 point 1
@@ -203,40 +234,33 @@
                         Python, scikit-learn,
                         pandas, 
                     </p>
-                </div>
-                <div class="card border-dark my-4 w-100">
-                    <div class="card-header text-dark d-flex justify-content-between">
-                        <h5 class="card-title">Dark card title -- Header</h5>
-                        <a href="#">Go to Github Repo</a>
-                    </div>
-                    <div class="card-body text-dark">
-                        <!-- <p class="card-text"><strong>Description:</strong></p> -->
-                        <ul>
-                            <li>
-                                point 1
-                            </li>
-                            <li>
-                                point 1
-                            </li>
-                            <li>
-                                point 1
-                            </li>
-                        </ul>
-                    </div>
-                    <p style="padding-left:15px;">
-                        <strong>Technology Used:</strong>
-                        Python, scikit-learn,
-                        pandas, 
-                    </p>
-                </div>
+                </div> -->
                 
             </div>
-
+        </div>
+    </section>
+    <section id="work">
+        <div class="container">
+            <h2>Work Experience</h2>
+            <hr>
+        </div>
+        
+    </section>
+    <section id="contact">
+        <div class="d-flex justify-content-between">
+            <div>
+                Designed and Built by Jimmy Zhu, 2022
+            </div>
+            <nav>
+                <!-- <a class="px-3">1</a>
+                <a class="px-3">2</a> -->
+                <a href="https://www.linkedin.com/in/yong-jun-jimmy-zhu-b88309b4/" class="fab fa-linkedin px-4" target="_blank">  LinkedIn Profile</a>
+                <a href="https://github.com/theCivilCoder" class="fab fa-github-square px-4" target="_blank">  Github Page</a>
+            </nav>
         </div>
 
     </section>
 
-    <div style="height:10000px">aa</div>
 
 
 
