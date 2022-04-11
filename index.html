@@ -160,6 +160,55 @@
                 </div>
                 <div class="card border-dark my-4 w-100">
                     <div class="card-header text-dark d-flex justify-content-between">
+                        <h5 class="card-title">Excel Table to SQL scripts</h5>
+                        <a href="https://github.com/theCivilCoder/MicroProjects/tree/main/Excel%20Table%20to%20SQL" target="_blank">Go to Github Repo</a>
+                    </div>
+                    <div class="card-body text-dark">
+                        <ul>
+                            <li>
+                                Takes a pivot table and creates the SQL scripts to insert the data into database tables with all relationships maintained.
+                            </li>
+                            <li>
+                                Each column is its own separate entity. The left most column is a strong entity with no foreign keys. Every other column has a foreign key to the respective entity on the column to the left.
+                            </li>
+                            <li>
+                                Entities inserted into the database table is sorted by the text and the text is formatted like a title.
+                            </li>
+                        </ul>
+                    </div>
+                    <p style="padding-left:15px;">
+                        <strong>Technology Used:</strong>
+                        Python, Pandas, SQL
+                    </p>
+                </div>
+                <div class="card border-dark my-4 w-100">
+                    <div class="card-header text-dark d-flex justify-content-between">
+                        <h5 class="card-title">Jobscraper</h5>
+                        <a href="https://github.com/theCivilCoder/Jobscraper" target="_blank">Go to Github Repo</a>
+                    </div>
+                    <div class="card-body text-dark">
+                        <ul>
+                            <li>
+                                Goes through the first five pages of indeed.com to collect the links of every job posting found with given job title search query.
+                            </li>
+                            <li>
+                                Prepares a summary spreadsheet with the title, company name, date posted, posting link, and location of each new job posting found today. This is used along with an overall spreadsheet to avoid duplicates.
+                            </li>
+                            <li>
+                                Webscrape each job posting along with its description and save the job posting to a word document. 
+                            </li>
+                            <li>
+                                Move all word documents and summary spreadsheet to a new directory and update the overall spreadsheet to track which links were already webscraped.
+                            </li>
+                        </ul>
+                    </div>
+                    <p style="padding-left:15px;">
+                        <strong>Technology Used:</strong>
+                        Python, Selenium, Pandas, docx, os, openpyxl 
+                    </p>
+                </div>
+                <!-- <div class="card border-dark my-4 w-100">
+                    <div class="card-header text-dark d-flex justify-content-between">
                         <h5 class="card-title">Energy News Webscraper</h5>
                         <a href="https://github.com/theCivilCoder/Energy_News_Webscraper" target="_blank">Go to Github Repo</a>
                     </div>
@@ -183,7 +232,7 @@
                         <strong>Technology Used:</strong>
                         Python, Selenium, Pandas, docx, os, openpyxl 
                     </p>
-                </div>
+                </div> -->
                 <div class="card border-dark my-4 w-100">
                     <div class="card-header text-dark d-flex justify-content-between">
                         <h5 class="card-title">Automated Resolution of Structural Dynamics Problems</h5>
